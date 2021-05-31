@@ -9,3 +9,10 @@ class User:
         '''
         saving user credentials into user_list for login code
         '''
+        self.username = username
+        self.username = password
+
+    # more users##
+
+    def save_user(self):
+        user.user_list.append(self)    
