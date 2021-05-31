@@ -15,4 +15,23 @@ class User:
     # more users##
 
     def save_user(self):
-        user.user_list.append(self)    
+        user.user_list.append(self)
+
+    #deleting user##
+
+    def delete_user(self):
+        '''
+        delete a user account
+        '''
+        User.user_list.remove(self)  
+
+        ####Find User####
+
+    @classmethod
+    def Find_user(cls, usernmae):
+        '''
+        find username using search method
+        '''
+        for user in cls.user_list:
+            if user.username == username:
+                return user
