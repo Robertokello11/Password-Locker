@@ -13,3 +13,16 @@ def create_useraccount(username, password):
 
 #save the user#
 
+def save_user(user):
+    '''
+    method save user  account
+    '''
+    user.save_user()
+
+def save_credentials(credentials):
+
+    '''
+    method save credentials  account
+    '''
+
+    credentials.save_credentials
