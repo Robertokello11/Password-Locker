@@ -83,12 +83,12 @@ def delete_cred(account):
 
 def main():
     # Dealing user class first
-    print("Welcome to Password Locker! Please enter your name:  ")
+    print("Ciao password locker! Please Input firstname or fullname:  ")
     name = input ()
-    print(f"{name}, Sign up to continue")
+    print(f"{name}, Sign in to continue")
     print('\n')
     print("*" * 80)
-    print("Reply with  : cc - Sign Up,  ex -exit ")
+    print("Reply with  : cc - Sign in,  ex -exit ")
     print("*" * 80)
 
     while True:
@@ -124,7 +124,7 @@ def main():
         
             print("Would you like a generated password?")
             if input()=="yes":
-                letters= "ghijklmnopqrstuvwxyz0123456789FGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+                letters= "fgtjklmnopqrstuvwxyz0123456789FGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
                 how_many = len(letters)
                 print("How long would you like your password to be? ")
                 print(f"p.s: Maximum length of password is {how_many}")
