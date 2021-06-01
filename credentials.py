@@ -28,3 +28,43 @@ class Credentials:
         '''
         Credentials.cred_list.remove(self)    
 
+   #search for credentials
+
+    @classmethod
+    def find_account(cls, account):
+        '''
+        search for accounts
+        '''
+        for cred in cls.cred_list:
+            if cred.account == account:
+                return cred    
+
+    #confirm credentials#
+
+    @classmethod
+    def cred_exists(cls, account):
+        '''
+        confirm a class actually exists
+        '''
+        for cred in cls.cred_list:
+            if cred.account == account:
+                return True
+        return False            
+
+
+        #Display credentials#
+
+    @classmethod
+    def display_cred(cls):
+        '''
+        method that returns all credentials
+        '''
+        return cls.cred_list
+
+    ##copy password#
+
+
+    @classmethod
+    def copy_passlock(cls, passlock):
+            find_account = Credentials.find_account(passlock)
+            pyperclip.copy(find_account.passlock)    
