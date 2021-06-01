@@ -40,4 +40,4 @@ At some point it wastnt running on terminal if so try again or check the errors 
 robertokello443@gmail.com
 
 ### License
-This project is under the [MIT] license copyright (c) {2021}
+This project is under the [MIT](License) license copyright (c) {2021}
